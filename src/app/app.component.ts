@@ -36,7 +36,7 @@ export class AppComponent {
     },
   ];
 
-  //for the events 
+  // array for the events 
  events:Array<{event_date:String,event_month:String,event_desc:String,event_location:String}> =[
   {
     event_date:'18',
@@ -52,7 +52,7 @@ export class AppComponent {
   }
  ]
 
- // for the conversation chats
+ // array for the conversation chats
  conversation:Array<{convo_name:String,convo_img_url:String}>=[
   {
     convo_name:'Raju Bhai',
@@ -72,13 +72,13 @@ export class AppComponent {
   }
  ]
 
- // for name
+ // object for name
  full_name={
   first_name:'Lalu',
   last_name:'Prasad',
  }
 
- // for posts
+ // array for posts
  posts:Array<{imgSrc:Object,userName:Object,timestamp:String,postText:String,postImgSrc:String,likeCount:Number,commentCount:Number,shareCount:Number}> = [
   {
     imgSrc: this.profile_image,
