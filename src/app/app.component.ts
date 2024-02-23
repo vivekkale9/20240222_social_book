@@ -13,7 +13,7 @@ import { CommonModule } from '@angular/common';
 
 export class AppComponent {
   profile_image = "https://images.unsplash.com/photo-1707707289494-af5b6017f7ab?q=80&w=1915&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
-  shortcuts= [
+  shortcuts:Array<{image_url:String,text:String}>= [
     {
       image_url:
         'https://images.unsplash.com/photo-1708139374769-67294f53fcc5?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
@@ -37,7 +37,7 @@ export class AppComponent {
   ];
 
   //for the events 
- events =[
+ events:Array<{event_date:String,event_month:String,event_desc:String,event_location:String}> =[
   {
     event_date:'18',
     event_month:'June',
@@ -53,7 +53,7 @@ export class AppComponent {
  ]
 
  // for the conversation chats
- conversation=[
+ conversation:Array<{convo_name:String,convo_img_url:String}>=[
   {
     convo_name:'Raju Bhai',
     convo_img_url:'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
@@ -79,7 +79,7 @@ export class AppComponent {
  }
 
  // for posts
- posts = [
+ posts:Array<{imgSrc:Object,userName:Object,timestamp:String,postText:String,postImgSrc:String,likeCount:Number,commentCount:Number,shareCount:Number}> = [
   {
     imgSrc: this.profile_image,
     userName: this.full_name.first_name+" "+this.full_name.last_name,

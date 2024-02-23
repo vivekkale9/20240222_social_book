@@ -273,6 +273,7 @@ nav{
     transform: translateX(-50%);
     border: 0;
     width: 35px;
+    height: 35px;
 }
 .write-post-container{
     width: 100%;
