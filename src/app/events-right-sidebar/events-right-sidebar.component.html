@@ -1,0 +1,16 @@
+<div class="sidebar-title">
+    <h4>Events</h4>
+    <a href="#">See All</a>
+  </div>
+  <div *ngFor="let event of events" class="event">
+    <div class="left-event">
+      <h3>{{ event.event_date }}</h3>
+      <span>{{ event.event_month }}</span>
+    </div>
+  
+    <div class="right-event">
+      <h4>{{ event.event_desc }}</h4>
+      <p><i class="fas fa-map-marker-alt"></i> {{ event.event_location }}</p>
+      <a href="#">More Info</a>
+    </div>
+</div>

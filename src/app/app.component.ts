@@ -3,11 +3,13 @@ import { CommonModule } from '@angular/common';
 import {NavbarComponent} from './navbar/navbar.component'
 import { ShortcutsLeftSidebarComponent } from './shortcuts-left-sidebar/shortcuts-left-sidebar.component';
 import { ImpLinksLeftSidebarComponent } from './imp-links-left-sidebar/imp-links-left-sidebar.component';
+import { EventsRightSidebarComponent } from './events-right-sidebar/events-right-sidebar.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports:[CommonModule,NavbarComponent,ShortcutsLeftSidebarComponent,ImpLinksLeftSidebarComponent],
+  imports:[CommonModule,NavbarComponent,ShortcutsLeftSidebarComponent,
+    ImpLinksLeftSidebarComponent,EventsRightSidebarComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
@@ -15,22 +17,7 @@ import { ImpLinksLeftSidebarComponent } from './imp-links-left-sidebar/imp-links
 export class AppComponent {
   profile_image = "https://images.unsplash.com/photo-1707707289494-af5b6017f7ab?q=80&w=1915&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
 
-  // array for the events 
- events:Array<{event_date:String,event_month:String,
-  event_desc:String,event_location:String}> =[
-  {
-    event_date:'18',
-    event_month:'June',
-    event_desc:'Zomaland',
-    event_location:'Hyderabad',
-  },
-  {
-    event_date:'20',
-    event_month:'July',
-    event_desc:'UFC',
-    event_location:'Pune',
-  }
- ]
+
 
  // array for the conversation chats
  conversation:Array<{convo_name:String,convo_img_url:String}>=[
