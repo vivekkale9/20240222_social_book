@@ -1,10 +1,4 @@
-.left-sidebar{
-    flex-basis: 25%;
-    position: sticky;
-    top: 70px;
-    align-self: flex-start;
 
-}
 .shortcut-link a{
     text-decoration: none;
     display: flex;

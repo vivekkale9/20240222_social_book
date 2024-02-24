@@ -36,3 +36,10 @@
     right: 0;
 
 }
+.left-sidebar{
+  flex-basis: 25%;
+  position: sticky;
+  top: 70px;
+  align-self: flex-start;
+
+}
