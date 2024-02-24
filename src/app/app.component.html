@@ -87,23 +87,7 @@
   <!----------------Right Sidebar----------------------->
   <div class="right-sidebar">
     <app-events-right-sidebar></app-events-right-sidebar>
-    <div class="sidebar-title">
-      <h4>Advertisement</h4>
-      <a href="#">close</a>
-    </div>
-    <img
-      src="https://i.postimg.cc/CLXYx9BL/advertisement.png"
-      class="siderbar-ads"
-    />
-    <div class="sidebar-title">
-      <h4>Conversation</h4>
-      <a href="#">Hide Chat</a>
-    </div>
-    <div *ngFor="let convo of conversation" class="online-list">
-      <div class="online">
-        <img [src]="convo.convo_img_url" alt="{{ convo.convo_name }}" />
-      </div>
-      <p>{{ convo.convo_name }}</p>
-    </div>
+    <app-advertisements-right-sidebar></app-advertisements-right-sidebar>
+    <app-conversation-right-sidebar></app-conversation-right-sidebar>
   </div>
 </div>

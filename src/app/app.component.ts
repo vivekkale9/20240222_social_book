@@ -4,40 +4,21 @@ import {NavbarComponent} from './navbar/navbar.component'
 import { ShortcutsLeftSidebarComponent } from './shortcuts-left-sidebar/shortcuts-left-sidebar.component';
 import { ImpLinksLeftSidebarComponent } from './imp-links-left-sidebar/imp-links-left-sidebar.component';
 import { EventsRightSidebarComponent } from './events-right-sidebar/events-right-sidebar.component';
+import { AdvertisementsRightSidebarComponent } from './advertisements-right-sidebar/advertisements-right-sidebar.component';
+import { ConversationRightSidebarComponent } from './conversation-right-sidebar/conversation-right-sidebar.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports:[CommonModule,NavbarComponent,ShortcutsLeftSidebarComponent,
-    ImpLinksLeftSidebarComponent,EventsRightSidebarComponent],
+    ImpLinksLeftSidebarComponent,EventsRightSidebarComponent,
+    AdvertisementsRightSidebarComponent,ConversationRightSidebarComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
 
 export class AppComponent {
   profile_image = "https://images.unsplash.com/photo-1707707289494-af5b6017f7ab?q=80&w=1915&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
-
-
-
- // array for the conversation chats
- conversation:Array<{convo_name:String,convo_img_url:String}>=[
-  {
-    convo_name:'Raju Bhai',
-    convo_img_url:'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-  },
-  {
-    convo_name:'Chotu Don',
-    convo_img_url:'https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-  },
-  {
-    convo_name:'Begum',
-    convo_img_url:'https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-  },
-  {
-    convo_name:'Noor Jaan',
-    convo_img_url:'https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-  }
- ]
 
  // object for name
  full_name={
