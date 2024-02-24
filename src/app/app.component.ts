@@ -1,12 +1,12 @@
 import { Component,OnInit} from '@angular/core';
-
+import {NavbarComponent} from './navbar/navbar.component'
 import { CommonModule } from '@angular/common';
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports:[CommonModule],
+  imports:[CommonModule,NavbarComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
@@ -37,7 +37,8 @@ export class AppComponent {
   ];
 
   // array for the events 
- events:Array<{event_date:String,event_month:String,event_desc:String,event_location:String}> =[
+ events:Array<{event_date:String,event_month:String,
+  event_desc:String,event_location:String}> =[
   {
     event_date:'18',
     event_month:'June',
@@ -79,7 +80,9 @@ export class AppComponent {
  }
 
  // array for posts
- posts:Array<{imgSrc:Object,userName:Object,timestamp:String,postText:String,postImgSrc:String,likeCount:Number,commentCount:Number,shareCount:Number}> = [
+ posts:Array<{imgSrc:Object,userName:Object,timestamp:String,
+  postText:String,postImgSrc:String,likeCount:Number,
+  commentCount:Number,shareCount:Number}> = [
   {
     imgSrc: this.profile_image,
     userName: this.full_name.first_name+" "+this.full_name.last_name,
