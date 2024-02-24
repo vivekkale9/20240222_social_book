@@ -2,11 +2,12 @@ import { Component,OnInit} from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {NavbarComponent} from './navbar/navbar.component'
 import { ShortcutsLeftSidebarComponent } from './shortcuts-left-sidebar/shortcuts-left-sidebar.component';
+import { ImpLinksLeftSidebarComponent } from './imp-links-left-sidebar/imp-links-left-sidebar.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports:[CommonModule,NavbarComponent,ShortcutsLeftSidebarComponent],
+  imports:[CommonModule,NavbarComponent,ShortcutsLeftSidebarComponent,ImpLinksLeftSidebarComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
