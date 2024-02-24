@@ -1,40 +1,18 @@
 import { Component,OnInit} from '@angular/core';
-import {NavbarComponent} from './navbar/navbar.component'
 import { CommonModule } from '@angular/common';
-
+import {NavbarComponent} from './navbar/navbar.component'
+import { ShortcutsLeftSidebarComponent } from './shortcuts-left-sidebar/shortcuts-left-sidebar.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports:[CommonModule,NavbarComponent],
+  imports:[CommonModule,NavbarComponent,ShortcutsLeftSidebarComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
 
 export class AppComponent {
   profile_image = "https://images.unsplash.com/photo-1707707289494-af5b6017f7ab?q=80&w=1915&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
-  shortcuts:Array<{image_url:String,text:String}>= [
-    {
-      image_url:
-        'https://images.unsplash.com/photo-1708139374769-67294f53fcc5?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-      text: 'beach',
-    },
-    {
-      image_url:
-        'https://images.unsplash.com/photo-1708368954671-f383a1887157?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-      text: 'food',
-    },
-    {
-      image_url:
-        'https://images.unsplash.com/photo-1708576086347-1e1929b43226?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-      text: 'party',
-    },
-    {
-      image_url:
-        'https://images.unsplash.com/photo-1682687221363-72518513620e?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-      text: 'castle',
-    },
-  ];
 
   // array for the events 
  events:Array<{event_date:String,event_month:String,

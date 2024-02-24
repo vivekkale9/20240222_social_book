@@ -19,15 +19,7 @@
       <a href="#"><img src="https://i.postimg.cc/VsXHCTVk/watch.png" />Watch</a>
       <a href="#">See More</a>
     </div>
-    <div class="shortcut-link">
-      <p>Your Shortcuts</p>
-      <div *ngFor="let shortcut of shortcuts" class="abc">
-        <a href="#">
-          <img [src]="shortcut.image_url" alt="{{ shortcut.text }}" />
-          {{ shortcut.text }}
-        </a>
-      </div>
-    </div>
+    <app-shortcuts-left-sidebar></app-shortcuts-left-sidebar>
   </div>
   <!----------------Main Sidebar----------------------->
   <div class="main-content">
