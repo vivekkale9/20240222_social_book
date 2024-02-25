@@ -6,13 +6,16 @@ import { ImpLinksLeftSidebarComponent } from './imp-links-left-sidebar/imp-links
 import { EventsRightSidebarComponent } from './events-right-sidebar/events-right-sidebar.component';
 import { AdvertisementsRightSidebarComponent } from './advertisements-right-sidebar/advertisements-right-sidebar.component';
 import { ConversationRightSidebarComponent } from './conversation-right-sidebar/conversation-right-sidebar.component';
+import { StoriesComponent } from './stories/stories.component';
+import { CreatePostComponent } from './create-post/create-post.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports:[CommonModule,NavbarComponent,ShortcutsLeftSidebarComponent,
     ImpLinksLeftSidebarComponent,EventsRightSidebarComponent,
-    AdvertisementsRightSidebarComponent,ConversationRightSidebarComponent],
+    AdvertisementsRightSidebarComponent,ConversationRightSidebarComponent,
+    StoriesComponent,CreatePostComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
@@ -20,11 +23,11 @@ import { ConversationRightSidebarComponent } from './conversation-right-sidebar/
 export class AppComponent {
   profile_image = "https://images.unsplash.com/photo-1707707289494-af5b6017f7ab?q=80&w=1915&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
 
- // object for name
- full_name={
-  first_name:'Lalu',
-  last_name:'Prasad',
- }
+  // object for name
+  full_name={
+    first_name:'Lalu',
+    last_name:'Prasad',
+  }
 
  // array for posts
  posts:Array<{imgSrc:Object,userName:Object,timestamp:String,
