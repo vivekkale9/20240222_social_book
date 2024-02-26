@@ -137,3 +137,30 @@ nav{
     background: #0a0a0a;
 
 }
+
+@media (max-width:900px){
+    nav{
+        flex-wrap: wrap;
+    }
+    .search-box{
+        display: none;
+    }
+    .logo{
+        width: 110px;
+        margin-right: 20px;
+    }
+    .nav-left ul li img{
+        width: 20px;
+        margin: 0 8px;
+
+    }
+    .nav-user-icon img{
+        width: 30px;
+        height: 30px;
+
+    }
+    .nav-user-icon{
+        margin-left: 0;
+
+    }
+}
